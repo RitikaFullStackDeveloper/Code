@@ -1,0 +1,291 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My custom html page</title>
+</head>
+<body>
+    <h1>Welcome to my custom page</h1>
+    <p>This page is a simple HTML document with a heading and a paragraph.</p>
+    <p>Feel free to modify it as you like!</p>
+    <input type="text" id="input-one" placeholder="Enter first string">
+    <input type="text" id="input-two" placeholder="Enter second string">
+    <button  onclick="sayHello()">Hello</button>
+    <button  onclick="sayBye()">bye</button>
+    <script>
+        // async function handleClick() {
+        //     alert('Button clicked!');
+        //   const response = await fetch("http://localhost:3000/" ,{
+        //     method: 'GET',
+        //   });
+        //     alert('Response received!' + await response.text());   
+            
+        // }
+
+      
+
+         function sayHello() {
+          // let x = addString("Hello ," ,"World")
+          // alert(x)
+          let inputOne = document.getElementById("input-one").value;
+          let inputTwo = document.getElementById("input-two").value;
+          let x = addString("hello", inputOne + " " +inputTwo + " "+ lunchBreak("2pm")) ;
+          alert(x);
+                 
+         }
+
+         function sayBye() {
+          // let x = addString("GoodBy", "World");
+          // alert(x)
+          let inputOne = document.getElementById("input-one").value;
+          let inputTwo = document.getElementById("input-two").value;
+          let x = "hello"+ inputOne + inputTwo + " "+ lunchBreak("4pm","10pm") ;
+          return(x); 
+
+            
+         }
+       
+
+         function lunchBreak(whattime,dinnertime){
+          let x = "We will take lunch at " +whattime;
+          let y = "We will take lunch at " +dinnertime;
+          return x + "and "+ y;
+         }
+
+
+
+         function addString(str1,str2){
+          let x = str1 +str2;
+          return x;
+         }
+        //  expression
+         const addString= function(str1,str2){
+          let x = str1+str2;
+          return x;
+         }
+        //  arrow function
+        addNumbert = (str1,str2)
+        let x = str1+str2;
+        return x;
+    </script>
+</body>
+</html> -->
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom HTML Page</title>
+</head>
+<body>
+    <h1>Welcome to my custom page</h1>
+    <p>This page is a simple HTML document with a heading and a paragraph.</p>
+    <p>Feel free to modify it as you like!</p> -->
+
+    <!-- Input fields -->
+    <!-- <input type="text" id="input-one" placeholder="Enter first string">
+    <input type="text" id="input-two" placeholder="Enter second string">
+    <br>
+    <br> -->
+
+    <!-- Buttons -->
+    <!-- <button onclick="sayHello()">GET</button> -->
+    <!-- <button onclick="sayBye()">Bye</button> -->
+    <!-- <button onclick="greetBoth()"> POST</button> <!-- New Button -->
+
+    <!-- <script> --> 
+        // Hello greeting
+        // function sayHello() {
+        //     let inputOne = document.getElementById("input-one").value;
+        //     let inputTwo = document.getElementById("input-two").value;
+        //     let message = addString("Hello ", inputOne + " " + inputTwo + " - " + lunchBreak("2pm"));
+        //     alert(message);
+        // }
+
+        // Bye greeting
+        // function sayBye() {
+        //     let inputOne = document.getElementById("input-one").value;
+        //     let inputTwo = document.getElementById("input-two").value;
+        //     let message = "Bye " + inputOne + " " + inputTwo + " - " + lunchBreak("4pm", "10pm");
+        //     alert(message);
+        // }
+
+        // New combined greeting
+        // function greetBoth() {
+        //     let inputOne = document.getElementById("input-one").value;
+        //     let inputTwo = document.getElementById("input-two").value;
+        //     let message = addString("Greetings ", inputOne + " " + inputTwo + " - " + lunchBreak("1pm", "8pm"));
+        //     alert(message);
+        // }
+
+        // Handles lunch and (optional) dinner message
+        // function lunchBreak(whattime, dinnertime) {
+        //     let lunchMsg = "Lunch at " + whattime;
+        //     let dinnerMsg = dinnertime ? " and dinner at " + dinnertime : "";
+        //     return lunchMsg + dinnerMsg;
+        // }
+
+        // String addition utility
+        // const addString = (str1, str2) => str1 + str2;
+
+        // Example number or string addition function
+        // const addNumbert = (str1, str2) => {
+        //     let result = str1 + str2;
+        //     return result;
+        // };
+        // async function fetchTeachers() {
+            // console.log("Fetching teachers data...");
+            // const teacherList = await fetch("http://localhost:4004/studentss", {
+            //     method: "GET",
+            // });
+ 
+            // const teachers = await teacherList.json();
+            // console.log(teachers);
+        
+//      const nameMsg = {
+//         name:document.getElementById("input-one").value,
+//         msg:document.getElementById("input-one").value,
+//      };
+//      nameMsgArray.push(nameMsg);
+//      document.getElementById("input-one").value = "";
+//      document.getElementById("input-two").value = "";
+
+//         }
+    <!-- // </script> -->
+<!-- </body>
+</html> -->
+
+
+
+<!-- new -->
+ <!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Front-end</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0e0f0f;
+      color: #333;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+ 
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: #000000;
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+ 
+    h1 {
+      text-align: center;
+      color: #007bff;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+ 
+    p {
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+    }
+ 
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+ 
+    button {
+      padding: 10px 20px;
+      margin: 10px 5px 0 0;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+ 
+    button:hover {
+      background-color: #0056b3;
+    }
+ 
+    #output {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #e8f0fe;
+      color: #333;
+      border-left: 4px solid #007bff;
+      border-radius: 5px;
+      font-size: 17px;
+    }
+ 
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+ 
+      button {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+</style>
+</head>
+ 
+<body>
+<div class="container">
+<h1>FRONTEND DEVELOPMENT</h1>
+ 
+    <input type="text" id="input-one" placeholder="Type something here...">
+<input type="text" id="input-two" placeholder="Type Message here...">
+ 
+    <div style="margin-top: 10px;">
+<button onclick="postMessages()">POST</button>
+<button onclick="getMessages()">GET</button>
+</div>
+ 
+    <div id="output"></div>
+</div>
+ 
+  <script>
+    let nameMsgArray = [];
+ 
+    function postMessages() {
+      const name = document.getElementById("input-one").value.trim();
+      const msg = document.getElementById("input-two").value.trim();
+ 
+      if (name && msg) {
+        nameMsgArray.push({ name: name, msg: msg });
+        document.getElementById("input-one").value = "";
+        document.getElementById("input-two").value = "";
+      }
+    }
+ 
+    function getMessages() {
+      let outputHTML = "";
+      for (let i = 0; i < nameMsgArray.length; i++) {
+        outputHTML += `<p><strong>Name:</strong> ${nameMsgArray[i].name}<br><strong>Message:</strong> ${nameMsgArray[i].msg}</p>`;
+      }
+      document.getElementById("output").innerHTML = outputHTML || "No messages yet.";
+    }
+</script>
+</body>
+ 
+</html>
